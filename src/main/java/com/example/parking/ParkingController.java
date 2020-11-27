@@ -33,6 +33,7 @@ public class ParkingController {
             PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
             out.append(result);
             out.close();
+            System.out.println(result);
         } catch (IOException e) {
             e.printStackTrace();
         }
