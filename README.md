@@ -1,4 +1,5 @@
 
+
 # parking_spring_app
 ## Steps to run this app:
 
@@ -21,9 +22,17 @@
  **Note: You can check application.properties file for conf related changes
 
 **Step #2 (Run the app):**
- - Run ParkingApplication.java
+ - Run ParkingApplication.java after cloning this repo.
  -  Open browser tab and type 'localhost:9090/parking?filepath=<input.txt file path>' where provide filepath of the input.txt file. eg: `http://localhost:9090/parking?filepath=/home/ss/me/parking/input.txt`
  - Sample input file: [https://gist.github.com/tarungarg546/6200f936f2208bad5d9d0e053d773489](https://gist.github.com/tarungarg546/6200f936f2208bad5d9d0e053d773489)
+
+**OR**
+
+ - Run https://drive.google.com/file/d/1KEicS6dnggaK4f1o6G0TDp9Ijn5J5g-n/view?usp=sharing jar file using java 1.8 after mysql setup.
+ -  Open browser tab and type 'localhost:9090/parking?filepath=<input.txt file path>' where provide filepath of the input.txt file. eg: `http://localhost:9090/parking?filepath=/home/ss/me/parking/input.txt`
+ - Sample input file: [https://gist.github.com/tarungarg546/6200f936f2208bad5d9d0e053d773489](https://gist.github.com/tarungarg546/6200f936f2208bad5d9d0e053d773489)
+
+            
 
   
 **Step #3 (Result):**
