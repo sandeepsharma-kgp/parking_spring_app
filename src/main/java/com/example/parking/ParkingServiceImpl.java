@@ -33,6 +33,7 @@ public class ParkingServiceImpl implements ParkingService {
         Matcher getVehicleRegForDriverAgePatternMatcher = getVehicleRegForDriverAgePattern.matcher(line);
 
         ParkingCommand parkingCommand = new ParkingCommand();
+        parkingCommand.setCommand(ParkingCommand.Command.INVALID);
 
         if(createPatternMatcher.find()) {
             parkingCommand.setCommand(ParkingCommand.Command.CREATE);
@@ -78,8 +79,9 @@ public class ParkingServiceImpl implements ParkingService {
                 return clearSlot(parkingCommand.getSlot());
             case GET_REG_NO_BY_AGE:
                 return getAllRegNoByDriverAge(parkingCommand.getDriverAge());
+            default:
+                return "Command not valid!!";
         }
-        return null;
     }
 
     private String getAllRegNoByDriverAge(Integer driverAge) {

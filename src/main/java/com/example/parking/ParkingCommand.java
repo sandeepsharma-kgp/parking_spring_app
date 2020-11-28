@@ -15,7 +15,8 @@ public class ParkingCommand {
         GET_SLOT_BY_AGE,
         GET_SLOT_BY_REG_NO,
         LEAVE_SLOT,
-        GET_REG_NO_BY_AGE
+        GET_REG_NO_BY_AGE,
+        INVALID
     }
 
     @Override

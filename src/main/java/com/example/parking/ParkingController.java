@@ -25,7 +25,9 @@ public class ParkingController {
             line = input.readLine();
             while (line != null) {
                 ParkingCommand parkingCommand = parkingService.findCommand(line);
-                result.append(parkingService.executeCommand(parkingCommand)).append("\r\n");
+                String execResult = parkingService.executeCommand(parkingCommand);
+                result.append(execResult).append("\n");
+                System.out.println(execResult);
                 // read next line
                 line = input.readLine();
             }
@@ -33,7 +35,6 @@ public class ParkingController {
             PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
             out.append(result);
             out.close();
-            System.out.println(result);
         } catch (IOException e) {
             e.printStackTrace();
         }
