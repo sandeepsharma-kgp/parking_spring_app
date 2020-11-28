@@ -6,8 +6,7 @@
 
 **Step #1 (Configurations):**
  - Run a mysql server on localhost at 3306 port and create user **root** with password **root**
- - create databse into it by command `create
-   database parkingApp` 	
+ - create databse into it by command `create database parkingApp;` 	
  - Run following DDL.
   
  ```CREATE TABLE `parking_ticket` (
@@ -16,7 +15,7 @@
   `vehicle_reg_no` varchar(100) DEFAULT NULL,
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ```
+); ```
 
 
  **Note: You can check application.properties file for conf related changes
